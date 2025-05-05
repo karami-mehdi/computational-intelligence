@@ -1,0 +1,23 @@
+% TikZ Configuration
+\usetikzlibrary{arrows.meta, positioning, shapes, calc}
+
+% Listings (code)
+\lstdefinestyle{customPython}{
+    backgroundcolor=\color{codebg},
+    basicstyle=\ttfamily\small\color{foreground},
+    keywordstyle=\color{keyword}\bfseries,
+    stringstyle=\color{string},
+    commentstyle=\color{comment}\itshape,
+    numberstyle=\tiny\color{lightgray},
+    numbers=left,
+    numbersep=8pt,
+    tabsize=4,
+    breaklines=true,
+    frame=single,
+    rulecolor=\color{lightgray},
+    showstringspaces=false
+}
+\lstset{style=customPython}
+
+% Custom Commands
+\newcommand{\highlight}[1]{\textcolor{accent}{\textbf{#1}}}

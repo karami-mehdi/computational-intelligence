@@ -1,0 +1,30 @@
+\section{Neural Networks}
+\subsection{Introduction}
+Neural networks are a type of machine learning algorithm inspired by the structure and function of the human brain that ...
+
+\subsection{Basic Neural Network Diagram}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=1cm and 1cm]
+  \tikzset{neuron/.style={circle, draw=accent, thick, minimum size=1cm}}
+
+  % Input Layer
+  \foreach \i in {1,2,3}
+    \node[neuron] (I\i) at (0, -\i) {};
+
+  % Hidden Layer
+  \foreach \i in {1,2,3}
+    \node[neuron] (H\i) at (2, -\i) {};
+
+  % Output Layer
+  \node[neuron] (O1) at (4, -2) {};
+
+  % Connections
+  \foreach \i in {1,2,3}
+    \foreach \j in {1,2,3}
+      \draw[accent] (I\i) -- (H\j);
+  \foreach \i in {1,2,3}
+    \draw[accent] (H\i) -- (O1);
+\end{tikzpicture}
+\caption{A simple neural network}
+\end{figure}

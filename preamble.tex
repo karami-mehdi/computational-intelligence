@@ -1,0 +1,34 @@
+% Basic Setup
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=teal,
+    citecolor=lime
+}
+
+% Set dark mode
+\newif\ifdarkmode
+\darkmodetrue % comment this line to enable light mode
+
+% Load custom colors and styles
+\input{colors}
+\input{styles}
+
+% Fonts
+% \usepackage[sfdefault]{FiraSans}
+% \renewcommand{\familydefault}{\sfdefault}
+% \usepackage{fontspec}
+% \setmainfont{Times New Roman}
+\usepackage{libertinus}
+
+% Dark background
+\pagecolor{background}
+\color{foreground}
