@@ -1,1 +1,1 @@
-# computational-intelligence
+# Computational Intelligence Notebook
